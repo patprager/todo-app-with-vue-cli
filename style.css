@@ -3,3 +3,50 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+  --dark-blue: #073b4c;
+  --light-blue: #118ab2;
+  --green: #06d6a0;
+  --yellow: #f5ab00;
+  --pink: #ef476f;
+}
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+.your-input {
+  border: 0.05rem solid var(--light-blue);
+  border-radius: 0.25rem;
+
+  padding: 0.25rem 0.5rem 0.25rem 1rem;
+
+  margin-left: 0.75rem;
+}
+
+.add-button {
+  border: 0.05rem solid var(--light-blue);
+  border-radius: 0.25rem;
+
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.delete-button {
+  border: 0.05rem solid var(--light-blue);
+  border-radius: 0.25rem;
+
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+  margin-right: 0.75rem;
+}
+
+.create-todo-list {
+  list-style: none;
+}
