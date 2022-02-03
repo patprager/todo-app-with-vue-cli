@@ -15,6 +15,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <main id="app">
+      <h1>ToDo-App</h1>
+      <section>
+        <h2>Filter & Options</h2>
+        <!-- Radio Button Auswahl -->
+        <div class="filter-function">
+          <input type="radio" id="radio-all" name="filter-checkbox" />
+          <label for="radio-all">All</label>
+        </div>
+        <div class="filter-function">
+          <input type="radio" id="radio-open" name="filter-checkbox" />
+          <label for="radio-open">Open</label>
+        </div>
+        <div class="filter-function">
+          <input type="radio" id="radio-done" name="filter-checkbox" />
+          <label for="radio-done">Done</label>
+        </div>
+      </section>
+      <article>
+        <div>
+          <h2>Your Task's</h2>
+          <input
+            class="your-input"
+            type="text"
+            name="new-todos"
+            value=""
+            placeholder="whats up? ^-^ "
+          />
+          <!-- Add Todo Button -->
+          <button class="add-button">Add</button>
+          <!-- Delete done Todo Button -->
+          <button class="delete-button">Delete Done</button>
+        </div>
+        <ul class="create-todo-list">
+          <!-- <li class="checkedbox"><input type="checkbox" /></li>-->
+        </ul>
+      </article>
+    </main>
     <script src="http://unpkg.com/vue@next"></script>
     <script src="script.js"></script>
   </body>
